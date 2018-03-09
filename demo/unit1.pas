@@ -52,11 +52,11 @@ begin
 //Se o imagelist nao for ligado ao componete Alarme nao parecera as imagens nos forms.
 
 
-  Alarme1.AdicionarEvento('Valor de receber - R$10,00',IncSecond(now,3),2);
-  Alarme1.AdicionarEvento('Contas a Pagar - 15,00',    IncSecond(now,6),4);
-  Alarme1.AdicionarEvento('Fulano ligou as 15:00',     IncSecond(now,9),0);
-  Alarme1.AdicionarEvento('Dentista as 15:00',         IncSecond(now,9),1);
-  Alarme1.AdicionarEvento('Lembrar de comprar impressora!', StrToDateTime('05/07/2017 21:09'), 1);
+  Alarme1.AdicionarEvento('Valor de receber - R$10,00',IncSecond(now,3),2,0);
+  Alarme1.AdicionarEvento('Contas a Pagar - 15,00',    IncSecond(now,6),4,0);
+  Alarme1.AdicionarEvento('Fulano ligou as 15:00',     IncSecond(now,9),0,0);
+  Alarme1.AdicionarEvento('Dentista as 15:00',         IncSecond(now,9),1,0);
+  Alarme1.AdicionarEvento('Lembrar de comprar impressora!', StrToDateTime('05/07/2017 21:09'), 1,0);
   alarme1.Ativar;
   //alarme1.Desativar; //para desativar se necessario
 
